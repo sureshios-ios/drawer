@@ -10,64 +10,78 @@ class Details extends StatefulWidget {
 class _DetailsState extends State<Details> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      body: Column(
-        children: [
-          SizedBox(
-            height: 30,
-          ),
-          Container(
-            width: 250,
-            child: textField('name'),
-          ),
-          SizedBox(
-            height: 30,
-          ),
-          Container(
-            width: 250,
-            child: textField('name'),
-          ),
-          SizedBox(
-            height: 30,
-          ),
+    return  Expanded(
+      child: Container(
+        margin: EdgeInsets.symmetric(horizontal: 40),
+        child: Column(
+          children: [
+            Expanded(
+              child: ListView(
+                children: [
+                  TextField(),
+              SizedBox(height: 30,),
+              /*    SizedBox(
+                    height: 30,
+                  ),
+                  Container(
+                    width: 250,
+                    child: textField('name'),
+                  ),
+                  SizedBox(
+                    height: 30,
+                  ),
+                  Container(
+                    width: 250,
+                    child: textField('name'),
+                  ),
+                  SizedBox(
+                    height: 30,
+                  ),*/
 
-          Container(
-            width: 250,
-            child: textField('name'),
-          ),
-          SizedBox(
-            height: 30,
-          ),
-          Container(
-            width: 250,
-            child: textField('name'),
-          ),
-          SizedBox(
-            height: 30,
-          ),
-          Container(
-            width: 250,
-            child: textField('name'),
-          ),
+                  Container(
+                    width: 250,
+                    child: textField('name'),
+                  ),
+                  /*SizedBox(
+                    height: 30,
+                  ),
+                  Container(
+                    width: 250,
+                    child: textField('name'),
+                  ),
+                  SizedBox(
+                    height: 30,
+                  ),
+                  Container(
+                    width: 250,
+                    child: textField('name'),
+                  ),*/
 
-          SizedBox(
-            height: 30,
-          ),
-          Container(
-            width: 250,
-            child: textField('name'),
-          ),
-          SizedBox(
-            height: 30,
-          ),
-          Container(
-            width: 250,
-            child: textField('name'),
-          ),
+                  SizedBox(
+                    height: 30,
+                  ),
+                  Container(
+                    width: 200,
+                    child: textField('name'),
+                  ),
+                  SizedBox(
+                    height: 30,
+                  ),
+                  Container(
+                    width: 250,
+                    height: 140,
+                    child: textField('name'),
+                  ),
 
-        ],
+                ],
+              ),
+            ),
+            // Card(
+            //
+            // )
+          ],
+        ),
       ),
-
     );
   }
 }

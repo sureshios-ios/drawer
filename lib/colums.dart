@@ -127,6 +127,23 @@ class _ColumsState extends State<Colums> {
               )
             ],
           ),
+        SizedBox(height: 40,),
+          Container(
+            padding: EdgeInsets.only(left: 25,right:25),
+          child: Row(
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            children: [
+              Text(
+                'MY CoACHES',
+                style: TextStyle(
+                  color: Colors.grey,
+                  fontWeight: FontWeight.bold
+                   // font
+                ),
+              )
+            ],
+          ),
+          )
         ],
       ),
     );
